@@ -10,7 +10,8 @@ body{
 	margin:0;
 	min-width: 100%;
 	min-height: 100%;
-	padding:0;
+	padding:auto;
+	/*text-align: center;*/
 }
 
 input.text{
@@ -19,30 +20,30 @@ input.text{
 	box-shadow: none;
 	font-size: 1.3em;
 	height: 50px;
-	max-width: 300px;
-	min-width: 300px;
 	-moz-box-shadow: none;
 	padding: 5px;
 	-webkit-box-shadow: none;
+	width: 300px;
 }
 
 input.button{
 	background: url("../img/botonprincipal.png") center center no-repeat;
 	border:none;
 	color:#fff;
+	height: 60px; 
 	margin: 20px auto 0 auto; 
-	min-height: 60px; /* 60 - 12 */
-	min-width: 240px;
 	padding: 6px auto;
 	font-size: 1.3em;
+	width: 240px;
 
 }
 
 input.button:hover{
-	background: url("../img/botonprincipalpress.png") center center no-repeat;
 	cursor:pointer;
 }	
-
+input.button:active{
+	background: url("../img/botonprincipalpress.png") center center no-repeat;
+}
 label{
 	display: inline-block;
 	margin-bottom: 4px;
@@ -55,21 +56,23 @@ div#login-box{
   	bottom: 0;
   	left: 0;
   	margin: auto;
-	min-width: 300px;
-	max-width: 300px;
-	height: 320px;
-	padding: 30px 45px;
+	width: 300px;
+	height: 340px;
+	padding: 30px 40px;
 	position: absolute;
   	right: 0;
   	top: 0;
+
+  	display: inline-block;	
 }
 
+div#login-box form{ 
+	width: 100%;
+}
 div#logo-txal{
 	background: url("../img/logo150.png") center center no-repeat;
+	height: 83px;
 	margin: 0px auto 10px auto; 
-	max-height: 83px;
-	max-width: 150px;
-	min-height: 83px;
-	min-width: 150px;
+	width: 150px;
 }
 
